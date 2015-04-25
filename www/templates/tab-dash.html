@@ -1,0 +1,12 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <div class="list card" ng-repeat="expense in expenses" ng-click="go('/tab/expense/' + expense._id)">
+      <div class="item item-divider">${{ expense.amount }}</div>
+      <div class="item item-body">
+        <div>
+          In <strong>{{ expense.category }}</strong>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

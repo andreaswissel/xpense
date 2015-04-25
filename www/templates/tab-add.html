@@ -1,0 +1,27 @@
+<ion-view view-title="Add Expense">
+  <ion-content>
+    <ion-list>
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Amount</span>
+          <input type="number" step="0.01" pattern="[0-9]*" placeholder="$999.99" ng-model="expense.amount">
+        </label>
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Category
+          </div>
+          <select ng-model="expense.category">
+            <option>Lifestyle</option>
+            <option selected>Food</option>
+            <option>Hookers</option>
+          </select>
+        </label>
+        <div class="padding">
+          <button class="button button-block button-positive activated" ng-click="addExpense()">
+            Add
+          </button>
+        </div>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
